@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: testdocker1
-        image: ruh.ocir.io/axn1ijewe81f/testdocker1:v0.0.1 # Use a specific version here
+        image: testdocker1:v0.0.1 # Use a specific version here
         ports:
         - containerPort: 8080
