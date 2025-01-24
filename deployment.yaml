@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: testdocker1
+  name: myresume
 spec:
   selector:
     matchLabels:
-      app: testdocker1
+      app: myresume
   replicas: 2
   template:
     metadata:
       labels:
-        app: testdocker1
+        app: myresume
     spec:
       containers:
-      - name: testdocker1
-        image: testdocker1:v0.0.1 # Use a specific version here
+      - name: myresume
+        image: myresume:1.0 # Use a specific version here
         ports:
-        - containerPort: 8080
+        - containerPort: 8090
