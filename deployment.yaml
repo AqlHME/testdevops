@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: myresume
-        image: nanajanashia/argocd-app:1.2
+        image: mohamedaql/testdocker1:latest
         ports:
         - containerPort: 8090
