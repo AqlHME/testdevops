@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: myapp-service
+  name: testdocker1-service
 spec:
   selector:
-    app: myapp
+    app: testdocker1
   ports:
   - port: 8080
     protocol: TCP
