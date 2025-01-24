@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: myapp
+  name: testdocker1
 spec:
   selector:
     matchLabels:
-      app: myapp
-  replicas: 7
+      app: testdocker1
+  replicas: 2
   template:
     metadata:
       labels:
-        app: myapp
+        app: testdocker1
     spec:
       containers:
-      - name: myapp
+      - name: testdocker1
         image: testdocker1:latest
         ports:
         - containerPort: 8080
