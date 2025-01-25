@@ -17,5 +17,4 @@ spec:
         image: mohamedaql/aqlphpmyadmin:1.2
         ports:
         - containerPort: 8090
-        imagePullSecrets:
-        - name:  regcred-dockerhub
+        
