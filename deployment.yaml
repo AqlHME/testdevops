@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: myresume
+  name: aqlphpmyadmin
 spec:
   selector:
     matchLabels:
-      app: myresume
+      app: aqlphpmyadmin
   replicas: 2
   template:
     metadata:
       labels:
-        app: myresume
+        app: aqlphpmyadmin
     spec:
       containers:
-      - name: myresume
-        image: mohamedaql/myresume:1.0
+      - name: aqlphpmyadmin
+        image: mohamedaql/aqlphpmyadmin:1.0
         ports:
         - containerPort: 8090
