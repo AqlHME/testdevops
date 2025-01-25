@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: testdocker1
+  name: myresume
 spec:
   selector:
     matchLabels:
-      app: testdocker1
+      app: myresume
   replicas: 1
   template:
     metadata:
       labels:
-        app: testdocker1
+        app: myresume
     spec:
       containers:
-      - name: testdocker1
-        image: mohamedaql/testdocker1:latest
+      - name: myresume
+        image: mohamedaql/myresume:1.0
         ports:
         - containerPort: 8090
