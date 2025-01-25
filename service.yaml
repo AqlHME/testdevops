@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: myresume
+  name: aqlphpmyadmin
 spec:
   selector:
-    app: myresume
+    app: aqlphpmyadmin
   ports:
   - port: 8090
     protocol: TCP
