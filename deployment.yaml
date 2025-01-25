@@ -17,4 +17,15 @@ spec:
         image: mohamedaql/aqlphpmyadmin:1.2
         ports:
         - containerPort: 8090
+         env:
+            - name: DOCKER_USERNAME
+              valueFrom:
+                secretKeyRef:
+                  name: dockerhub-credentials
+                  key: DOCKER_USERNAME
+            - name: DOCKER_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: dockerhub-credentials
+                  key: DOCKER_PASSWORD
         
