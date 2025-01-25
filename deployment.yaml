@@ -18,4 +18,4 @@ spec:
         ports:
         - containerPort: 8090
         imagePullSecrets:
-        - name: my-secret1
+        - name:  regcred-dockerhub
