@@ -1,0 +1,3 @@
+kustomize:
+  images:
+  - mohamedaql/aqlphpmyadmin:1.1
