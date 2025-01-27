@@ -3,6 +3,8 @@ kind: Kustomization
 resources:
   - deployment.yaml
   - service.yaml
+patchesStrategicMerge:
+  - patch-imagepullsecrets.yaml
 images:
   - name: docker.io/mohamedaql/mainrepo
     newTag: 1.3
