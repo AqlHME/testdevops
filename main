@@ -1,3 +1,3 @@
 kustomize:
   images:
-  - mohamedaql/mainrepo:2.2
+  - mohamedaql/mainrepo:2.3
