@@ -1,3 +1,4 @@
 kustomize:
   images:
   - docker.io/mohamedaql/mainrepo:2.8
+  - mohamedaql/mainrepo:2.9
