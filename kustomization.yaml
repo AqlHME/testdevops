@@ -3,5 +3,10 @@ kind: Kustomization
 resources:
   - deployment.yaml
   - service.yaml
-patchesStrategicMerge:
-  - patch-imagepullsecrets.yaml
+patches:
+  - target:
+      kind: Deployment
+      name: app
+    path: patch-imagepullsecrets.yaml
+images:
+  - name: docker.io/mohamedaql/mainrepo
