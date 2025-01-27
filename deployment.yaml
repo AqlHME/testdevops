@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: mainrepo
-        image: docker.io/mohamedaql/mainrepo:1.2
+        image: docker.io/mohamedaql/mainrepo:1.3
         ports:
         - containerPort: 8090
          
